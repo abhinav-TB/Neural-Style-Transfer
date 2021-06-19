@@ -39,3 +39,4 @@ def train(original_img, style_img, generated, model, total_steps, alpha, beta, o
         optimizer.step()
     print("total loss = " , total_loss.item())
     save_image(generated, f"./output/output.png")
+    print("output saved")
