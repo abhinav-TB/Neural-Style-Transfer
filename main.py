@@ -8,17 +8,19 @@ import torchvision.models as models
 from model import VGG
 from utils import *
 
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-s", "--style", help = "Style Image path" , required=True)
+    parser.add_argument("-c", "--content", help = "Content Image path" , required=True)
+    parser.add_argument("-e", "--epochs", help = "Number of Epocs" , required=True)
+    return parser.parse_args()
 
 
 
 if __name__ == "__main__":
     
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-s", "--style", help = "Style Image path" , required=True)
-    parser.add_argument("-c", "--content", help = "Content Image path" , required=True)
-    parser.add_argument("-e", "--epochs", help = "Number of Epocs" , required=True)
-    args = parser.parse_args()
- 
+
+    args = parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     imsize = 356
