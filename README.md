@@ -4,14 +4,22 @@
 # Nueral Style Transfer
 Pytorch implementation of Nueral style transfer algorithm , it is used to apply artistic styles to content images .  Content is the layout or the sketch and Style being the painting or the colors.
 
+  
 
+## Examples
+
+  
+
+![example 1](https://objectstorage.ap-hyderabad-1.oraclecloud.com/n/ax9kets4h5ld/b/github/o/example1.png)
+
+![example 1](https://objectstorage.ap-hyderabad-1.oraclecloud.com/n/ax9kets4h5ld/b/github/o/example2.png)
 # Getting Started
 
 ## Prerequisite
 
  - Python 3+ (tested on python 3.9)
  - pytorch
- - Nvedia Gpu(not neccessary but it will significantly boost your training speed
+ - Nvedia Gpu(not necessary but it will significantly boost your training speed
  
  
 
@@ -50,7 +58,7 @@ Example
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what makes the open source community such an amazing place to  learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -65,7 +73,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-[@abhiGamez](https://twitter.com/abhiGamez) on twitter
+[@abhiGamez](https://twitter.com/abhiGamez) on Twitter
 
 ## Acknowledgements
 
