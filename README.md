@@ -79,3 +79,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Acknowledgements
 
  - [A Neural Algorithm of Artistic Styles](https://arxiv.org/abs/1508.06576)
+ - [Neural Style Transfer: A Review](https://arxiv.org/abs/1705.04058)
