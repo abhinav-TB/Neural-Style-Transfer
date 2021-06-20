@@ -6,7 +6,7 @@ def load_image(image_name , loader , device):
     image = loader(image).unsqueeze(0)
     return image.to(device)
 
-def train(original_img, style_img, generated, model, total_steps, alpha, beta, optimizer ):
+def train(original_img, style_img, generated, model, total_steps, alpha, beta, optimizer,output_folder ):
     for step in range(total_steps):
     # Obtain the convolution features in specifically chosen layers
         generated_features = model(generated)
@@ -38,5 +38,5 @@ def train(original_img, style_img, generated, model, total_steps, alpha, beta, o
         total_loss.backward()
         optimizer.step()
     print("total loss = " , total_loss.item())
-    save_image(generated, f"./output/output.png")
+    save_image(generated, f"{output_folder}/output.png")
     print("output saved")

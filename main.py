@@ -6,13 +6,14 @@ import torch.optim as optim
 import torchvision.transforms as transforms
 import torchvision.models as models
 from model import VGG
-from utils import *
+from train import *
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--style", help = "Style Image path" , required=True)
     parser.add_argument("-c", "--content", help = "Content Image path" , required=True)
     parser.add_argument("-e", "--epochs", help = "Number of Epocs" , required=True)
+    parser.add_argument("-o", "--output", help = "Output Folder" , required=False)
     return parser.parse_args()
 
 
@@ -28,6 +29,7 @@ if __name__ == "__main__":
     learning_rate = 0.001
     alpha = 1
     beta = 0.01
+    output_folder = "./output" if args.output is None else args.output
 
     loader = transforms.Compose(
         [
@@ -44,4 +46,4 @@ if __name__ == "__main__":
     optimizer = optim.Adam([generated], lr=learning_rate)
 
 
-    train(original_img, style_img, generated, model, total_steps, alpha, beta, optimizer)
+    train(original_img, style_img, generated, model, total_steps, alpha, beta, optimizer , output_folder)

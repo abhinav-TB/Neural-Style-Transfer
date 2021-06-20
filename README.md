@@ -45,6 +45,7 @@ Command line Arguments
 | `-s` | `string` | **Required**. path to style image |
 | `-c` | `string` | **Required**. path to content image |
 | `-e` | `string` | **Required**. Number of training loops |
+| `-o` | `string` |  Output folder path |
 
 start training
    ```sh
@@ -52,7 +53,7 @@ start training
    ```
 Example
    ```sh
-   python main.py -s ./style/style5.jpg -c ./content/trees.jpg -e 250 
+   python main.py -s ./style/style5.jpg -c ./content/trees.jpg -e 2500 
    ```
 
 <!-- CONTRIBUTING -->
