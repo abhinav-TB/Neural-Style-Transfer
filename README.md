@@ -27,7 +27,7 @@ Pytorch implementation of Nueral style transfer algorithm , it is used to apply 
 
 1. Clone the repo
    ```sh
-   https://github.com/abhinav-TB/Neural-Style-Transfer.git
+   git clone https://github.com/abhinav-TB/Neural-Style-Transfer.git
    ```
 3. Install python packages
    ```sh
