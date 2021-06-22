@@ -19,7 +19,7 @@ Pytorch implementation of Nueral style transfer algorithm , it is used to apply 
 
  - Python 3+ (tested on python 3.9)
  - pytorch
- - Nvidia Gpu(not necessary but it will significantly boost your training speed
+ - Nvidia Gpu(not necessary but it will significantly boost your training speed)
  
  
 
